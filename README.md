@@ -5,29 +5,12 @@ Tested on Ubuntu 12.04
 # Attributes
 
 * `node['editor']['default']` The system-wide default editor, defaults to "/usr/bin/vim.basic"
-* `node['editor']['user_groups']` The groups of users whose default editor should be configured, defaults to sysadmin
 
 # Recipes
 
 ## default
 
 Configures sytem-wide default editor.
-
-## users
-
-Configures a user's default editor.
-
-# Example Data Bag Items
-
-## Users
-
-```json
-{
-  "id": "vim_user",
-  "editor": "/usr/bin/vim.basic",
-  "groups": ["sysadmin"]
-}
-```
 
 # License and Authors
 

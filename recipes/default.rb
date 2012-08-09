@@ -24,6 +24,9 @@
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
 
-execute "update-alternatives --set editor #{node['editor']['default']}" do
-  not_if "update-alternatives --query editor | grep Value | grep #{node['editor']['default']}"
+file "/etc/profile.d/editor.sh" do
+  owner "root"
+  group "root"
+  mode "755"
+  content %{export EDITOR="#{node['editor']['default']}"}
 end

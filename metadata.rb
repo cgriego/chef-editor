@@ -10,4 +10,3 @@ supports "debian"
 supports "ubuntu"
 
 recipe "editor", "Configures sytem-wide default editor."
-recipe "editor::users", "Configures a user's default editor."
