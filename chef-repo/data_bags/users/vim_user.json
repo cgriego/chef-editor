@@ -1,0 +1,5 @@
+{
+  "id": "vim_user",
+  "editor": "/usr/bin/vim.basic",
+  "groups": ["sysadmin"]
+}

@@ -1,0 +1,6 @@
+{
+  "id": "removed_user",
+  "action": "remove",
+  "editor": "/usr/bin/vim.basic",
+  "groups": ["sysadmin"]
+}

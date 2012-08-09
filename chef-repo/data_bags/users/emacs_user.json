@@ -1,0 +1,5 @@
+{
+  "id": "emacs_user",
+  "editor": "/usr/bin/emacs23",
+  "groups": ["sysadmin"]
+}

@@ -1,0 +1,22 @@
+cookbooks:
+- chef_handler:
+- minitest-handler:
+- users:
+- emacs:
+- editor:
+
+roles:
+- editor:
+
+data bags:
+- users:
+  - ambivalent_user
+  - emacs_user
+  - princess
+  - removed_user
+  - vim_user
+
+nodes:
+- ec2 1:
+  - recipe[minitest-handler] role[editor]
+  - --no-host-key-verify --ssh-user ubuntu --groups default --image ami-3c994355 --flavor c1.medium --distro chef-full --region us-east-1
